@@ -1,6 +1,1 @@
-- TODO
-
-<!---
-jepjep741/jepjep741 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Jepjep is a simple tool to check the functionality of your system or fix it automatically.
