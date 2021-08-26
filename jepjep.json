@@ -1,0 +1,36 @@
+{
+"system": "testing",
+"implements": "show",
+  "services":
+[
+{
+"type":"http",
+"name":"Local Apache",
+"action":"systemctl start apache2",
+"url": "localhost",
+"healthy_response": "200"
+},
+{
+"type":"tcp",
+"name":"Test the port",
+"action":"restartBarAndDance",
+"host": "127.0.0.1",
+"port": "80"
+},
+{
+"type":"json",
+"name":"jsonii",
+"url":"https://jsonplaceholder.typicode.com/todos/1",
+"key": "title",
+"value": "delectus aut autem",
+"action": "echo foo"
+},
+{
+"type":"http",	
+"name":"Apache 2",
+"url": "localhost",
+"healthy_response": "200",
+"action":"/opt/local/foobar.sh"
+}
+]
+}
